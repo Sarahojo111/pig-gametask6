@@ -81,14 +81,13 @@ if(playing){
   //b.  check if player score is greater or equal to 100
  if (scores[activePlayer] >= 100){
 
-// finich game
+// finish game
    playing=false;
    diceEl.classList.add('hidden');
    document.querySelector(`.player--${activePlayer}`).classList.add( 'player--winner');
    document.querySelector(`.player--${activePlayer}`).classList.remove( 'player--active');
   } 
   else{
-
    //c. switch player
    switchPlayer();
   }
